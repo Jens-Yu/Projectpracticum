@@ -3,15 +3,18 @@
 ## Overview
 [Background](#Background)
 
-[Process of the Project](#Process of the Project)
+[Process of the Project](#Process-of-the-Project)
+
+-[1. Initialization of samples](1.-Initialization-of-samples)
 
 ## Background
 Efficient and reliable generation of global path plans are necessary for safe execution and deployment of autonomous systems.In order to generate planning graphs which resolve the topology of a given environment, many sampling-based motion planners resort to coarse, but heuristically-driven strategies which often fail to generalize to new and varied surroundings.The paper "Stein Variational Probabilistic Roadmaps" proposes a method for Probabilistic Roadmaps which relies on particle-based Variational Inference to efficiently cover the posterior distribution over feasible regions in configuration space. Stein Variational Probabilistic Roadmap (SV-PRM) results in sample-efficient generation of planning-graphs and large improvements over traditional sampling approaches.Here is the compare of sv-prm and traditional prm. The left picture is the result of sv-prm, and the other one is traditional prm.
 ![image](https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/3e9678ea-3bab-403b-a727-95338fe761f8)
 ![image](https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/7bc62ac1-b956-450c-b54a-8f153a65fbf5)
 
-## Process of the Project
-1. Initialization of samples
+## Process-of-the-Project
+### 1.-Initialization-of-samples
+
 As the left figure shows , run the file manipulator.py, you can see the Cartesian space of a planner robot.The closest distances between manipulators and obstacles are shown in the figure.These distances will be used to calculate the posterior probability. And then we transfer the obstacles into configuration space of manipulator.
 <img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/f54b8086-2822-4561-9047-b240f522c2c5">
 <img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/ae8f7c5b-8c4e-4d4b-baa2-e9910786a40c">
@@ -19,7 +22,8 @@ As the left figure shows , run the file manipulator.py, you can see the Cartesia
 Particles are initialized based on prior distribution,here we use uniform distribution. The black points in the figure below are the initial particles.
 <img alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/4de0e820-a28e-4f20-8028-a022116b7680" width="400" height="400">
 
-2. Bayesian Occupancy Maps
+### 2. Bayesian Occupancy Maps
+
 A Bayesian occupancy map is a probabilistic approach for modeling and updating a map of an environment.In a Bayesian occupancy map, each cell in a grid map represents the probability of whether that cell is occupied or unoccupied.Desire a sampling distribution having high probability in the safe set S, and low probability elsewhere. Represent the probability of a given point x∈𝑹^𝑑 being collision-free by the feasibility likelihood 𝑝(𝑧=1|𝐱;𝜃)with map parameter 𝜃∈𝑹^𝑚. The occupancy indicator variable 𝑧∈{0,1} labels a given location as being in-collision (z = 0) or collision-free (z =1).
 Using Bayes’ Rule, we can obtain a posterior probability over collision-free space:
   𝑝(𝐱│z=1;θ)=ƞ𝑝(𝑧=1│𝐱;θ)𝑝(𝐱)
@@ -28,7 +32,7 @@ Where 𝑝(𝐱│z=1;θ)  is the probability of sampling a point in a non-occup
 
 In this case we want to optimize the posterior probability. So based on the formula above we should calculate the likelihood first.
 
-3.Feasibility Distributions in Motion Planning
+### 3.Feasibility Distributions in Motion Planning
 
 Based on some reference papers we can get following funktions:
 
