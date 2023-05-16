@@ -20,6 +20,7 @@ Efficient and reliable generation of global path plans are necessary for safe ex
 ### 1-Initialization-of-samples
 
 As the left figure shows , run the file manipulator.py, you can see the Cartesian space of a planner robot.The closest distances between manipulators and obstacles are shown in the figure.These distances will be used to calculate the posterior probability. And then we transfer the obstacles into configuration space of manipulator.
+
 <img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/f54b8086-2822-4561-9047-b240f522c2c5">
 <img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/ae8f7c5b-8c4e-4d4b-baa2-e9910786a40c">
 
