@@ -30,6 +30,7 @@ As the left figure shows , run the file manipulator.py, you can see the Cartesia
 <img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/ae8f7c5b-8c4e-4d4b-baa2-e9910786a40c">
 
 Particles are initialized based on prior distribution,here we use uniform distribution. The black points in the figure below are the initial particles.
+
 <img alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/4de0e820-a28e-4f20-8028-a022116b7680" width="400" height="400">
 
 ### 2-Bayesian-Occupancy-Maps
