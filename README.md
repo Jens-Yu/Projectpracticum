@@ -17,8 +17,9 @@
 
 ## Background
 Efficient and reliable generation of global path plans are necessary for safe execution and deployment of autonomous systems.In order to generate planning graphs which resolve the topology of a given environment, many sampling-based motion planners resort to coarse, but heuristically-driven strategies which often fail to generalize to new and varied surroundings.The paper "Stein Variational Probabilistic Roadmaps" proposes a method for Probabilistic Roadmaps which relies on particle-based Variational Inference to efficiently cover the posterior distribution over feasible regions in configuration space. Stein Variational Probabilistic Roadmap (SV-PRM) results in sample-efficient generation of planning-graphs and large improvements over traditional sampling approaches.Here is the compare of sv-prm and traditional prm. The left picture is the result of sv-prm, and the other one is traditional prm.
-<img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/3e9678ea-3bab-403b-a727-95338fe761f8">
-<img width="400" height="400" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/7bc62ac1-b956-450c-b54a-8f153a65fbf5">
+
+<img width="300" height="300" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/3e9678ea-3bab-403b-a727-95338fe761f8">
+<img width="300" height="300" alt="image" src="https://github.com/Jens-Yu/Projektpraktikum/assets/122354667/7bc62ac1-b956-450c-b54a-8f153a65fbf5">
 
 ## Process-of-the-Project
 ### 1-Initialization-of-samples
